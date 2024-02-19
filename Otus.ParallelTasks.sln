@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otus.ParallelTasks", "Otus.ParallelTasks\Otus.ParallelTasks.csproj", "{5444FB23-58E4-40F7-891D-5E083347447E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5444FB23-58E4-40F7-891D-5E083347447E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5444FB23-58E4-40F7-891D-5E083347447E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5444FB23-58E4-40F7-891D-5E083347447E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5444FB23-58E4-40F7-891D-5E083347447E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
