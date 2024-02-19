@@ -11,5 +11,5 @@ var spacesCount = await fileResearchService.CalculateSpacesInFilesAsync("./TextF
 
 stopwatch.Stop();
 
-Console.WriteLine(spacesCount);
-Console.WriteLine(stopwatch.Elapsed.TotalSeconds);
+Console.WriteLine($"Spaces count: {spacesCount}");
+Console.WriteLine($"Elapsed total seconds: {stopwatch.Elapsed.TotalSeconds}");
