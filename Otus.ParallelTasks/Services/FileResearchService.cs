@@ -2,13 +2,13 @@
 
 public class FileResearchService : IFileResearchService
 {
-    public async Task<int> CalculateSpacesInFilesAsync(string directoryPath)
+    public async Task<int> CalculateSpacesInFilesAsync(string directoryPath, CancellationToken token = default)
     {
         if (!Directory.Exists(directoryPath))
-            throw new Exception($"Directory {directoryPath} not found");
+            throw new DirectoryNotFoundException($"Directory {directoryPath} not found");
         
         var allFilePaths = Directory.GetFiles(directoryPath);
-        var tasks = allFilePaths.Select(r => Task.Run(() => CalculateSpacesInFileAsync(r))).ToList();
+        var tasks = allFilePaths.Select(CalculateSpacesInFileAsync).ToList();
         var results = await Task.WhenAll(tasks);
         return results.Sum();
     }

@@ -2,5 +2,5 @@
 
 public interface IFileResearchService
 {
-    Task<int> CalculateSpacesInFilesAsync(string directoryPath);
+    Task<int> CalculateSpacesInFilesAsync(string directoryPath, CancellationToken token = default);
 }
